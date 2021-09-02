@@ -1,0 +1,7 @@
+# Site settings
+title: NFCities
+description: Modern-Blog A Elegant template for Jekyll
+keywords: NFT, NFCities, Fun
+author: NFCities
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "nfciti.es" # the base hostname & protocol for your site
