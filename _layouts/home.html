@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<!-- Main -->
+<div id="main">
+    {% for nfcity in site.data.nfcities %}
+        <article class="thumb">
+            <a href="{{ nfcity.image_url }}" class="image"><img src="{{ nfcity.image_url }}" alt="" /></a>
+            <h2>{{ nfcity.name }}</h2>
+            <!-- <p>{{ nfcity.description }}</p> -->
+            <p>
+                <a href="{{ nfcity.permalink }}" title="Buy on OpenSea" target="_blank"><img style="width:220px; border-radius:5px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);" src="https://storage.googleapis.com/opensea-static/Logomark/Badge%20-%20Available%20On%20-%20Dark.png" alt="Available on OpenSea" /></a>
+            </p>
+        </article>
+    {% endfor %}
+</div>

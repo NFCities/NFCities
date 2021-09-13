@@ -1,0 +1,29 @@
+<!-- Footer -->
+<div class="inner split">
+    <div>
+        <section>
+            <h2>{{ site.title }}</h2>
+            <p>{{ site.footer.description }}</p>
+        </section>
+        <!-- <section>
+            <h2>Follow me on ...</h2>
+        </section> -->
+        <p class="copyright">
+            &copy; {{ site.title }}. Design: <a href="http://html5up.net">HTML5 UP</a>.
+        </p>
+    </div>
+    <div>
+        <section>
+            <h2>Get in touch</h2>
+            <ul class="icons">
+                {% for link in site.footer.links %}
+                  {% if link.label and link.url %}
+                    <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer" class="icon {{ link.icon | default: 'fa-link' }}"><span class="label">{{ link.label }}</span></a></li>
+                  {% endif %}
+                {% endfor %}
+                <li><a href="https://opensea.io/collection/nf-citi-es" class="icon" title="Opensea.io" target="_blank"><img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png" style="width: 30px;" alt="OpenSea" /></a></li>
+
+            </ul>
+        </section>
+    </div>
+</div>
